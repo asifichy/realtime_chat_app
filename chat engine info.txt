@@ -1,4 +1,5 @@
 chat engine
 
-username: asifimtiyajchowdhury
-usersecret: asifniloy12345
+chat title: Group Chat
+admin username: asifimtiyajchowdhury
+admin key (secret): asifniloy12345
