@@ -13,7 +13,7 @@ const App = () => {
             userName = "asifniloy"
             userSecret = "123123"
 
-            //rendering my own chat props
+            //rendering my own chat props and custom components
             renderChatFeed = {(chatAppProps) => <ChatFeed  { ...chatAppProps}/>}
         />
     );
