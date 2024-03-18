@@ -3,3 +3,10 @@ chat engine
 chat title: Group Chat
 admin username: asifimtiyajchowdhury
 admin key (secret): asifniloy12345
+
+user info
+username: asifimtiyajchowdhury
+usersecret: asifniloy12345
+
+username: niloychowdhury
+usersecret: 123456
