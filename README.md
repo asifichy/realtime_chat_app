@@ -11,5 +11,6 @@ Chat Engine - uses sockets behind the scene. It's the easiest chat API to get st
 
 npx create-react-app ./ it allows to create a new react application right into the directory.
 
+- Now I will create a login system different people login and chat with eachother.
 
 The work is in progress. !!!
