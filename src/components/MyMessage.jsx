@@ -1,4 +1,4 @@
-const MyMassage = () => {
+const MyMassage = ({ message }) => {
     //checks if our messgae is an image and if so then do these ... 
     if(message?.attachments?.length > 0){
         return(
@@ -6,13 +6,13 @@ const MyMassage = () => {
                 src={message.attachments[0].file}
                 alt="message-attachment"
                 className="message-image"
-                style={{float: 'right'}}
+                style={{ float: 'right' }}
             />
         )
     }
 
     return (
-        <div className="message" style={{float: 'right', marginRight: '18px', color: 'white', backgroundColor: '#3B2A50'}}>
+        <div className="message" style={{ float: 'right', marginRight: '18px', color: 'white', backgroundColor: '#3B2A50' }}>
             {message.text}
         </div>
     );

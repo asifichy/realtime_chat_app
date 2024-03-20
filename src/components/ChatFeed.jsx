@@ -22,7 +22,7 @@ const ChatFeed = (props) => {
             const MyMassage = userName === message.sender.userName;
 
             return(
-                <div key={ `msg_${index}`} style={{width: '100%'}}>
+                <div key={ `msg_${index}`} style={{ width: '100%' }}>
                     <div className="message-block">
                         {
                             isMyMessage 
@@ -30,7 +30,7 @@ const ChatFeed = (props) => {
                             : <TheirMessage message = {message} lastMessage = {messages[lastMessageKey]} />
                         }
                     </div>
-                    <div className="read-receipts" style={{marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px': '68px'}}>
+                    <div className="read-receipts" style={{ marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px': '68px' }}>
                         read-receipts
                     </div>
                 </div>
@@ -58,7 +58,7 @@ const ChatFeed = (props) => {
                 </div>
             </div>
             {renderMessages()}
-            <div style={{height: '100px'}}>
+            <div style={{ height: '100px' }}>
                     <div className="message-form-container">
                         <Messageform {...props} chatId = {activeChat} />
                     </div>
