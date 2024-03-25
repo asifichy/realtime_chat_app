@@ -9,11 +9,8 @@ The development is in progress.
 
 Chat Engine - uses sockets behind the scene. It's the easiest chat API to get started on. 
 
-npx create-react-app ./ it allows to create a new react application right into the directory.
+I have used chat engine and its backend is hosted on https://chatengine.io/ 
 
-- Now I will create a login system different people login and chat with eachother.
 
-Customizing is in progress. Just seat tight and wait for the build.!
-
-The work is in progress. !!!
+Here the method of adding new members into the team chat is the admin can (only) add new members. (Logout button is future task), and the team members will get realtime message notification (using sound to alert), sending images/files into the team chat. (This is a (beginner) clone version of MS Team). Also we can see who is active using active sign in avatars.
 
