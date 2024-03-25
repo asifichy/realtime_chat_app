@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 import { sendMessage, isTyping } from 'react-chat-engine';
-import { sendOutlined, PictureOutlined } from '@ant-design/icons';
+import { SendOutlined, PictureOutlined } from '@ant-design/icons';
 
 const Messageform = (props) => {
 
@@ -26,7 +26,7 @@ const Messageform = (props) => {
     }
 
     const handleUpload = (event) => {
-        sendMessage(creds, chatId, { files: event.target.value, text: '' })
+        sendMessage(creds, chatId, { files: event.target.files, text: '' })
     }
     
     return (
@@ -50,8 +50,11 @@ const Messageform = (props) => {
                 style={{ display: 'none' }}
                 onChange={handleUpload}
             />
+            <button type="submit" className="send-button">
+                <SendOutlined className="send-icon" />
+            </button>
         </form>
     );
-}
+};
 
 export default Messageform;
