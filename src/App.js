@@ -20,6 +20,8 @@ const App = () => {
         
         //new propmt(); it renders my own chat props and custom components
         renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
+        
+        //adding notification sound
         onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
     />
   );
