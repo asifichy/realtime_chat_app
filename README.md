@@ -13,4 +13,7 @@ npx create-react-app ./ it allows to create a new react application right into t
 
 - Now I will create a login system different people login and chat with eachother.
 
+Customizing is in progress. Just seat tight and wait for the build.!
+
 The work is in progress. !!!
+
