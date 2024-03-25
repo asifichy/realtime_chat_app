@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const projectID = '7115d3c2-6564-4cc5-9ac7-6f4095c5ed0b';
 
-const Modal = () => {
+const LoginFrom = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -31,11 +31,20 @@ const Modal = () => {
         <div className="form">
             <h1 className="title">Chat Application</h1>
             <form onSubmit={handleSubmit}>
-            <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required />
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
+            <input 
+                type="text" 
+                value={username} 
+                onChange={(e) => setUsername(e.target.value)} 
+                className="input" 
+                placeholder="Username" required />
+            <input 
+                type="password" 
+                value={password} onChange={(e) => setPassword(e.target.value)} 
+                className="input" 
+                placeholder="Password" required />
             <div align="center">
                 <button type="submit" className="button">
-                <span>Start chatting</span>
+                    <span>Start chatting</span>
                 </button>
             </div>
             </form>
@@ -46,4 +55,4 @@ const Modal = () => {
     );
 };
 
-export default Modal;
+export default LoginFrom;
